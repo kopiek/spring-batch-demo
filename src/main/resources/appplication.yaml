@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  batch:
+    table-prefiex:
+    initializer:
+      enabled: true
+    job:
+      enabled: false
+  application:
+    name: spring-batch-demo
+  jpa:
+    hebernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/sample
+    username: root
+    password: 123456
